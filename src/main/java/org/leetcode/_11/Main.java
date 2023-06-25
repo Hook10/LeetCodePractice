@@ -2,7 +2,8 @@ package org.leetcode._11;
 
 public class Main {
   public static void main(String[] args) {
-
+    int maxArea = maxArea(new int[]{1, 8, 6, 2, 5, 4, 8, 3, 7});
+    System.out.println(maxArea);
   }
 
   private static int maxArea(int[] height) {
