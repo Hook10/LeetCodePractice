@@ -12,7 +12,7 @@ public class Main {
     int maxArea = 0;
     while (pointer1 < pointer2) {
       if (height[pointer1] < height[pointer2]) {
-        maxArea = Math.max(maxArea, height[pointer1] * ( pointer2 - pointer1));
+        maxArea = Math.max(maxArea, height[pointer1] * (pointer2 - pointer1));
         pointer1 += 1;
       } else {
         maxArea = Math.max(maxArea, height[pointer2] * (pointer2 - pointer1));
