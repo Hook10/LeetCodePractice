@@ -2,7 +2,8 @@ package org.leetcode._392;
 
 public class Main {
   public static void main(String[] args) {
-      isSubsequence("abc", "ahbgdc");
+    System.out.println(isSubsequence("abc", "ahbgdc"));
+    System.out.println(isSubsequence("ab", "ababab"));
   }
 
   private static boolean isSubsequence(String s, String t) {

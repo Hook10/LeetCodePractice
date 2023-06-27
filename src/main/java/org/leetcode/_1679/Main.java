@@ -5,6 +5,7 @@ import java.util.Arrays;
 public class Main {
   public static void main(String[] args) {
     System.out.println(maxOperations( new int[]{3,1,3,4,3}, 6));
+    System.out.println(maxOperations( new int[]{3,1,3,4,3,4,2}, 4));
   }
 
   private static int maxOperations(int[] nums, int k) {
