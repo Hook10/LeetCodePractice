@@ -18,7 +18,7 @@ public class Main {
     for (int i = 0; i < s.length() - k; i++) {
       int j = i + k;
       if (isVowel(s.charAt(j))) {
-        current ++;
+        current++;
       }
       if (isVowel(s.charAt(i))) {
         current--;
