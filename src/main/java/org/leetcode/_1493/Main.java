@@ -1,12 +1,14 @@
-package org.leetcode._1004;
+package org.leetcode._1493;
 
 public class Main {
   public static void main(String[] args) {
-    System.out.println(longestOnes(new int[] {1,1,1,0,0,0,1,1,1,1,0}, 2));
+    System.out.println(longestSubArray(new int[] {1,1,0,1}));
+    System.out.println(longestSubArray(new int[] {0,1,1,1,0,1,1,0,1}));
   }
 
-  public static int longestOnes(int[] nums, int k) {
+  private static int longestSubArray(int[] nums) {
     int result = 0;
+    int k = 1;
     for (int i = 0, j = 0; i < nums.length; i++) {
       if (nums[i] == 0) {
         k--;
@@ -17,7 +19,7 @@ public class Main {
         }
         j++;
       }
-      result = Math.max(result, i - j + 1);
+      result = Math.max(result, i - j);
     }
     return result;
   }
