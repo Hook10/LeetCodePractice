@@ -12,11 +12,10 @@ public class Main {
         if (i != pos) {
           nums[pos] = nums[i];
           nums[i] = 0;
+          pos++;
         }
-        pos++;
       }
     }
-
   }
 
 }
