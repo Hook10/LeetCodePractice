@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Main {
   public static void main(String[] args) {
-    int[] nums = {1,3,2};
+    int[] nums = {1,2,4,3};
     int[] nums2 = {1,2,3};
     int[] nums3 = {3,1,2};
 
@@ -39,7 +39,7 @@ public class Main {
     reverse(nums, i + 1);
   }
 
-  private static void swap(int[] nums, int i, int j) {
+  private static void swap(int[] nums, int i, int j ) {
     int temp = nums[i];
     nums[i] = nums[j];
     nums[j] = temp;
@@ -51,6 +51,6 @@ public class Main {
       swap(nums, start, end);
       start++;
       end--;
+      }
     }
-  }
 }
