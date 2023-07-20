@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Main {
   public static void main(String[] args) {
-    int[][] matrix = {{1,2,3}, {4,5,6}, {7,8,9}};
+    int[][] matrix = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
     List<Integer> list = spiralOrder(matrix);
     System.out.println(list);
   }
@@ -44,7 +44,6 @@ public class Main {
         left++;
       }
     }
-
     return ans;
   }
 }
