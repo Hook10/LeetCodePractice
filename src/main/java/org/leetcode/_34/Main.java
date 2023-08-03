@@ -8,20 +8,20 @@ public class Main {
 
   }
 
-  private static int[] searchRange(int[] A, int target) {
-    int start = firstGreaterEqual(A, target);
-    if (start == A.length || A[start] != target) {
+  private static int[] searchRange(int[] nums, int target) {
+    int start = firstGreaterEqual(nums, target);
+    if (start == nums.length || nums[start] != target) {
       return new int[]{-1, -1};
     }
-    return new int[]{start, firstGreaterEqual(A, target + 1) - 1};
+    return new int[]{start, firstGreaterEqual(nums, target + 1) - 1};
   }
 
-  private static int firstGreaterEqual(int[] A, int target) {
-    int low = 0, high = A.length;
+  private static int firstGreaterEqual(int[] nums, int target) {
+    int low = 0, high = nums.length;
     while (low < high) {
       int mid = low + ((high - low) >> 1);
       //low <= mid < high
-      if (A[mid] < target) {
+      if (nums[mid] < target) {
         low = mid + 1;
       } else {
         high = mid;
