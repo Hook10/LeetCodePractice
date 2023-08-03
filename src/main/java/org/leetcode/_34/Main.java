@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class Main {
   public static void main(String[] args) {
     System.out.println(Arrays.toString(searchRange(new int[]{5, 7, 7, 8, 8, 10}, 8)));
-
+    System.out.println(100 >> 1);
   }
 
   private static int[] searchRange(int[] nums, int target) {
@@ -19,7 +19,7 @@ public class Main {
   private static int firstGreaterEqual(int[] nums, int target) {
     int low = 0, high = nums.length;
     while (low < high) {
-      int mid = low + ((high - low) >> 1);
+      int mid = low + ((high - low) /2 );
       //low <= mid < high
       if (nums[mid] < target) {
         low = mid + 1;
