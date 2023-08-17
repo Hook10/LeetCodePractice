@@ -11,7 +11,7 @@ public class Main {
     int num = 0;
     int prev = 0;
     for (int i = s.length() - 1; i >= 0; i--) {
-      switch(s.charAt(i)) {
+      switch (s.charAt(i)) {
         case 'I' -> num = 1;
         case 'V' -> num = 5;
         case 'X' -> num = 10;
