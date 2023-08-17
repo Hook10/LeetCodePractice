@@ -6,7 +6,7 @@ public class Main {
     System.out.println(maxDepth("(1)+((2))+(((3)))"));  // should return 3
   }
 
-  private static int maxDepth(String s ) {
+  private static int maxDepth(String s) {
     char[] array = s.toCharArray();
     int max = 0;
     int count = 0;
