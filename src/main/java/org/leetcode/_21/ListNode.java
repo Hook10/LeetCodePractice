@@ -34,7 +34,7 @@ public class ListNode {
     } else {
       tail.next = list1;
     }
-    return dummy;
+    return dummy.next;
   }
 
   @Override
