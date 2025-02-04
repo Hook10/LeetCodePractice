@@ -14,6 +14,8 @@ public class Main {
     int[] ints2 = twoSum(nums2, target2);
     System.out.println(Arrays.toString(ints));
     System.out.println(Arrays.toString(ints2));
+
+    System.out.println("Hello".hashCode());
   }
 
   private static int[] twoSum(int[] nums, int target) {
