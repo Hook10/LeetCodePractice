@@ -25,6 +25,10 @@ public class Main {
       //  4
     //  2    7
     // 1 3  6 9
+
+    Main main = new Main();
+    List<Integer> integerList = main.inorderTraversal(root);
+    System.out.println(integerList);
   }
 
   public List<Integer> inorderTraversal(TreeNode root) {
